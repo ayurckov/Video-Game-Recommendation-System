@@ -1,0 +1,86 @@
+# ===== Виртуальные окружения =====
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+.eggs/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+pip-wheel-metadata/
+.installed.cfg
+
+# ===== PyTorch / артефакты обучения =====
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.torchscript
+*.pkl
+*.joblib
+checkpoints/
+models/
+runs/
+logs/
+wandb/
+lightning_logs/
+tensorboard/
+
+# ===== Данные =====
+data/raw/
+data/processed/
+data/interim/
+*.csv
+*.csv.gz
+*.tsv
+*.tsv.gz
+*.json.gz
+*.jsonl.gz
+*.ndjson.gz
+*.parquet
+*.parquet.gz
+*.feather
+*.h5
+*.hdf5
+*.zip
+*.tar
+*.tar.gz
+*.gz
+!requirements.txt
+!requirements-dev.txt
+
+# Маленькие референсные файлы, которые нужны в репозитории:
+# !data/reference/*.gz
+# !data/reference/*.csv
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ===== IDE / редакторы =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== ОС =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Секреты и конфиги =====
+.env
+.env.*
+!.env.example
+secrets.json
+config.local.*
+kaggle.json
+.kaggle/
